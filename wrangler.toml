@@ -3,4 +3,7 @@ command = "npm run build"
 publish = "build/client"
 
 [site]
-bucket = "build/client" 
+bucket = "build/client"
+
+[build.upload]
+format = "service-worker" 
