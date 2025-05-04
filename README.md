@@ -1,3 +1,7 @@
+npm run build
+npm run deploy
+
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
