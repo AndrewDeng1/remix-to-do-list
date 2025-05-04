@@ -1,0 +1,32 @@
+{
+  "name": "remix-to-do-list",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "dev": "remix dev",
+    "dev:cloudflare": "remix build && wrangler pages dev ./public --local --persist-to .wrangler/state --d1=DB",
+    "build": "remix build",
+    "start": "remix-serve build",
+    "deploy": "npm run build && wrangler pages deploy ./public"
+  },
+  "dependencies": {
+    "@cloudflare/d1": "^1.4.1",
+    "@cloudflare/workers-types": "^4.20250425.0",
+    "@remix-run/cloudflare": "^2.8.1",
+    "@remix-run/cloudflare-pages": "^2.8.1",
+    "@remix-run/react": "^2.8.1",
+    "drizzle-orm": "^0.43.1",
+    "isbot": "^5.1.27"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.8.1",
+    "@remix-run/serve": "^2.8.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
