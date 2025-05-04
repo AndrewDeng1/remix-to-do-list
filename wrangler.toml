@@ -1,3 +1,7 @@
+name = "remix-to-do-list"
+main = "build/worker.js"
+compatibility_date = "2024-03-04"
+
 [build]
 command = "npm run build"
 publish = "public"
